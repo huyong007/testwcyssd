@@ -24,3 +24,13 @@ var myJavaScriptLseeionInfoObj = {
     
     console.log('姓名');
     console.log(name);
+    console.log("年龄；" + age);
+    console.log('身高= '+ height + ', 体重 = ' + weight);
+    console.log('地点：' + locationBase);
+    console.log('公司：' + company);
+    console.log('\n\n\n');
+    console.log('---我喜欢的颜色---');
+    console.log('我总共喜欢' + myLikeColorsList.length + ' 种颜色 ');
+    console.log(myLikeColorsList[0]);
+    console.log(myLikeColorsList[2]);
+
