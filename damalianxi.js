@@ -33,4 +33,15 @@ var myJavaScriptLseeionInfoObj = {
     console.log('我总共喜欢' + myLikeColorsList.length + ' 种颜色 ');
     console.log(myLikeColorsList[0]);
     console.log(myLikeColorsList[2]);
-
+    console.log(myLikeColorsList[1]);
+    console.log(myLikeColorsList[3]);
+    console.log('*************************');
+    console.log('\n\n');
+    console.log('***我喜欢的事物***');
+    console.log('我总共喜欢' + myLikeFoods.length + '种事物');
+    for (var i = 0;i < myLikeFoods.length; i++) 
+    {console.log(myLikeFoods[i])};
+    console.log('********');
+    for(var i = 0,j = myLikeFoods.length; i < myLikeFoods.length;
+        i++,j--){
+        console.log(myLikeFoods[i,j])};
