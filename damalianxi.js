@@ -11,7 +11,7 @@ var locationBase = '北京';
 var company = locationBase + '新生大学';
 var myLikeColorsList = ['blue','green','black','white'];
 var myLikeFoods = ['刀削面','拉面','牛肉面','杂酱面','麻辣面','烩面','莜面'];
-var myJavaScriptLseeionInfoObj = {
+var myJavaScriptLessionInfoObj = {
     teacher: name,
     teacherWeChat: wechat_user_name,
     title:'javaScript编程入门',
@@ -45,3 +45,33 @@ var myJavaScriptLseeionInfoObj = {
     for(var i = 0,j = myLikeFoods.length; i < myLikeFoods.length;
         i++,j--){
         console.log(myLikeFoods[i,j])};
+        console.log('------------');
+        console.log('\n');
+        console.log('JavaScript课程信息');
+        console.log(myJavaScriptLessionInfoObj);
+        console.log('\n');
+        console.log('#########');
+        console.log('我是分界线');
+        console.log('##########');
+var xiaoming2 = {
+    name: name,
+    config:{
+        age,
+        height,
+        weight,
+        isMan,
+        student,
+        bloodType:'A',
+        haveGirlFriend:true
+    },
+    like:{
+        myLikeColorsList,
+        myLikeFoods
+    },
+    work:{
+        locationBase,
+        company
+    },
+    myJavaScriptLessionInfoObj
+};
+console.log(xiaoming2);
