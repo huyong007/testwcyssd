@@ -22,3 +22,12 @@ function startSoundOff(){
 
 }
   startSoundOff();
+  console.log('I\'am a\r man');
+
+  s = 'wo shizhongguoren';
+ console.log(s.length) 
+console.log(s.replace(/\g/g,"G"));
+
+var o = { x:1 };
+o.x = 2;
+o.y = 3;
