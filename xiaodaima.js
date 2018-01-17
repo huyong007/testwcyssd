@@ -1,19 +1,19 @@
-function soldierA(){
+function soldierA() {
     console.log('1到');
 }
-function soldierB(){
+function soldierB() {
     console.log('2到');
 }
-function soldierC(){
+function soldierC() {
     console.log('3到');
 }
-function soldierD(){
+function soldierD() {
     console.log("4到");
 }
-function soldierE(){
+function soldierE() {
     console.log("5到");
 }
-function startSoundOff(){
+function startSoundOff() {
     soldierA();
     soldierB();
     soldierC();
@@ -21,13 +21,13 @@ function startSoundOff(){
     soldierE();
 
 }
-  startSoundOff();
-  console.log('I\'am a\r man');
+startSoundOff();
+console.log('I\'am a\r man');
 
-  s = 'wo shizhongguoren';
- console.log(s.length) 
-console.log(s.replace(/\g/g,"G"));
+s = 'wo shizhongguoren';
+console.log(s.length)
+console.log(s.replace(/\g/g, "G"));
 
-var o = { x:1 };
+var o = { x: 1 };
 o.x = 2;
 o.y = 3;
