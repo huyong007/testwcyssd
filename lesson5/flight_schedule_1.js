@@ -7,9 +7,9 @@ function checkFlightSchedule() {
         from: 'beijing',
         to: 'hangzhou'
     };
-    return scheduleInfo.start
+   console.log('startTime');
 };
 
 
-var startTime = checkFlightSchedule();
-console.log(startTime);
+
+console.log(checkFlightSchedule());
