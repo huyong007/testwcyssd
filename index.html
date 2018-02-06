@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./public/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
@@ -60,7 +61,10 @@
       <div class="col-md-3 ">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">登陆</h3>
+            <input type="button" onclick="changeLink()" value="登录">
+            <div id="app">
+              {{ message }}
+            </div>
           </div>
           <li class="list-group-item">
             <a href="https://www.jianshu.com/p/ac38a91e2ac2">
@@ -69,17 +73,42 @@
           </li>
         </div>
         <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">热门标签</h3>
-            </div>
-            <li class="list-group-item">
-              <a href="https://www.jianshu.com/p/ac38a91e2ac2">
-                ＥＯＳ　英语单词
-              </a>
-            </li>
+          <div class="panel-heading">
+            <h3 class="panel-title">热门标签</h3>
           </div>
+          <li class="list-group-item">
+            <a href="https://www.jianshu.com/p/ac38a91e2ac2">
+              ＥＯＳ　英语单词
+            </a>
+          </li>
+        </div>
+        <div id="app-4">
+          <ol>
+            <li v-for="todo in todos">
+              {{ todo.text }}
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
 </body>
 
 </html>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'welcome to a new blog system!'
+    }
+  })
+  var app4 = new Vue({
+    el: '#app-4',
+    data: {
+      todos: [
+        { text: '学习 JavaScript' },
+        { text: '学习 Vue' },
+        { text: '整个牛项目' }
+      ]
+    }
+  })
+</script>
