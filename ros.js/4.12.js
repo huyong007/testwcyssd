@@ -1,12 +1,3 @@
 
-
-
-var a = 'total', b = 'sales_tax';
-
-var c = a + b;
-
-console.log(c);
-
-var total ='total'+'sales_tax'
-
-console.log(total);
+for (i = 0, j = 10; i < j; i++ , j--)
+    console.log(i + j);
