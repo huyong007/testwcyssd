@@ -1,3 +1,4 @@
+console.log(28-38);
 
 function buyFoods(){
   console.log('采购原材料和菜');
@@ -8,7 +9,7 @@ function buyFoods(){
 function prepare(){
   console.log('努力磨刀...努力洗碗...努力打扫...劳动最光荣');
   return 'Ok';
-}
+} 
 
 function cooking(foodsList){
   console.log('今天要做这些菜'+foodsList);
