@@ -1,15 +1,20 @@
-var fs= require('fs');
-var dirPathString='../../../../';
-var filePathString='../ros.js/allFilesName.txt';
 
-var files=fs.readdirSync(dirPathString);
-function callback(err){
-    if(err){
-        console.log('写文件失败');
-    }else{
-        console.log('写文件成功');
-    }
+var jsonFile=require('jsonFile');
+var file='./test_data/data.json';
+var testJSONData=[{
+    name:'xugaoyang',
+    avatar:'https://ws1.sinaimg.cn/large/006tKfTcgy1fi7s7vo8y0j30hs0hsaay.jpg',
+words:'我想带领大家感受变成语言JavaScript的魅力，与同学们一起成长是我的荣幸'
+},{
+    avatar:"https://avatars0.githubusercontent.com/u/384727?v=4&s=460",
+    name:"蓉儿",
+    words:"成为屌屌的全栈设计师"
 }
-fs.writeFileSync(filePathString,files,callback());
-
-
+];
+jsonFile.writeFile(file,testJSONData,function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log('read ok')
+    }
+});
