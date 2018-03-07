@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>新生大学</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <script src="vue.min.js"></script>
+    <script src="words.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-header">
+            <div class="container">
+                <h1>JavaScript编程入门</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">老徐其实我一直想跟你说：谢谢你带我感受到了编程的魅力，通过你授课中的兴奋与激情，我听着真的很开心，尤其是lesson7中飙的那个TMD给了那么多包，印象太深刻了哈哈，还有你coding的时候那种兴奋真的非常感染人，我只有学的更好为社区做出更大的贡献，让更多的人感受到代码的魅力才足以回馈这份碰到老徐的缘分，哈哈</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="words-pannel" v-for="item in wordsList">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object avatar" v-bind:src="item.avatar" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    {{ item.name }}
+                                </h4>
+                                {{ item.words }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    // vue官网： https://cn.vuejs.org/v2/guide/
+    // 初始化Vue
+
+    // 把收集的数据放在这里
+    var wordsList = [ ];
+
+    new Vue({
+        el: '#app',   // #app 和html中div#id的 app 对应
+        data: {
+            wordsList: words  // 变量wordsList可以在html使用
+        }
+    });
+
+</script>
