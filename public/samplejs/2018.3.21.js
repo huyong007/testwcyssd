@@ -6,7 +6,8 @@ cooking函数的执行流程，3，函数的执行都是按照顺序一行一行
 如果函数体内比如碰到条件语句会出现跳过执行的情况，其他都是一条来
 执行，跳转语句看了标签语句和break还有continue这两个都牵扯到while
 和其他的条件语句，这个后面再看,如果打印的数字超过数组的范围那么
-会给一个underfined*/
+会给一个underfined，continue就是在出现了错误值仍然继续执行在for
+循环中，*/
 function buyFoods(callback) {
     console.log("我要開始採購食物啦、、、、、");
     setTimeout(function () {
