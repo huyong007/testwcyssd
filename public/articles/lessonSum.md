@@ -66,7 +66,7 @@ B，所有的对象之间的都需要用英文单引号，变量直接书写，�
 3，如何构建自己的服务器：web服务或web应用或webapp
 4，什么是前端，什么是后端？服务器可以称为webapp，服务器不仅提供htmlcss js还提供数据db，前端工程师干的就是htmlcss，js，后端干的就是db、业务逻辑，前端和后端的代码都是在服务器上写着，只是渲染执行代码的时候前端和后端的执行环境不同，
 5，github给我提供了一个服务器，
-6，如何用js构建一个webapp，mddir lesson10创建一个文件夹，又开一个窗口npm install -g express generoar@4这个叫全局安装express，从四十分钟开始讲如何操作
+6，如何用js构建一个webapp，mkdir lesson10创建一个文件夹，又开一个窗口npm install -g express-generoar@4这个叫全局安装express，从四十分钟开始讲如何操作
 
 架构中不需要public
 现在本地跑起来，然后再想
