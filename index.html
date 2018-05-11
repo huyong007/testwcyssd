@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-<div id="calendar" style="height: 800px;">calendar belong you</div>
+<div id="calendar" style="height: 800px;"></div>
 
 </body>
 
@@ -111,7 +111,13 @@
       message: 'welcome to a new blog system!'
     }
   })
-  var app4 = new Vue({
+  var app = new Vue({
+    el: '#calendar',
+    data: {
+      message: 'welcome to a new calendar!'
+    }
+  })
+  var app = new Vue({
     el: '#app-4',
     data: {
       todos: [
