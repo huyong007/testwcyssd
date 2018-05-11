@@ -1,0 +1,32 @@
+Arguments: 
+  D:\NVM\nodejs\node.exe D:\Application\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\yonghu\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\ProgramData\Lenovo\ReadyApps;C:\Program Files (x86)\Calibre2;D:\NVM\nvm;D:\NVM\nodejs;C:\Program Files\Git\cmd;D:\Application\yarn\bin;C:\Users\yonghu\AppData\Local\Microsoft\WindowsApps;D:\软件;D;C:\NVM\nvm;D:\NVM\nodejs;D:\VScode\Microsoft VS Code\bin;C:\Users\yonghu\AppData\Local\GitHubDesktop\bin;D:\Application\Docker Toolbox\Docker Toolbox;C:\Users\yonghu\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  9.11.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\yonghu\work\testwcyssd\package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at D:\Application\yarn\lib\cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (D:\Application\yarn\lib\cli.js:98:30)
+      at D:\Application\yarn\lib\cli.js:109:13
+      at <anonymous>
+
+npm manifest: 
+  
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

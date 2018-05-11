@@ -1,0 +1,22 @@
+{
+  "name": "testwcyssd",
+  "version": "1.0.0",
+  "description": "练习html各种技巧",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyong007/testwcyssd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyong007/testwcyssd/issues"
+  },
+  "homepage": "https://github.com/huyong007/testwcyssd#readme",
+  "dependencies": {
+    "tui-calendar": "^1.1.0"
+  }
+}
