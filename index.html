@@ -8,118 +8,107 @@
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./public/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-  <script src="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
 </head>
 
 <body>
-  <div class="main-header">
+  <div id="app">
+    <div class="main-header">
+      <div class="container">
+        <h1>
+          胡永的博客网站
+        </h1>
+      </div>
+      <div class="pf_photo" node-type="photo">
+        <p class="photo_wrap">
+          <imag src="https://wx2.sinaimg.cn/mw1024/005Egs8bgy1figzupy12yj30hs0hsaa8.jpg"></imag>
+        </p>
+      </div>
+    </div>
     <div class="container">
-      <h1>
-        胡永的官方网站
-      </h1>
-    </div>
-    <div class="pf_photo" node-type="photo">
-      <p class="photo_wrap">
-        <imag src="https://wx2.sinaimg.cn/mw1024/005Egs8bgy1figzupy12yj30hs0hsaa8.jpg"></imag>
-      </p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="col-md-6 col-md-offset-1">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">编程</h3>
-        </div>
+      <div class="col-md-6 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">编程</h3>
+          </div>
 
-        <li class="list-group-item">
-          <a href="https://www.jianshu.com/p/ac38a91e2ac2">
-            js基础学习“偷”别人的数据
-          </a>
-        </li>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">区块链</div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="https://www.jianshu.com/p/81060fd07987">
-              数字签名-----计算机与真实世界的映射----算法（程序）
-            </a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://www.jianshu.com/p/00919e08a28b">
-              比特币白皮书翻译
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">英语学习</div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="https://www.jianshu.com/p/d94b3ce39485">
-              查字典
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <div class="col-md-3 ">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <input type="button" onclick="changeLink()" value="登录">
-            <div id="app">
-              {{ message }}
-            </div>
-          </div>
-          <li class="list-group-item">
-            <a href="./public/articles/konwSysterm.md">
-              写作让你更快的成长
-            </a>
-          </li>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">热门标签</h3>
-          </div>
           <li class="list-group-item">
             <a href="https://www.jianshu.com/p/ac38a91e2ac2">
-              ＥＯＳ　英语单词
+              js基础学习“偷”别人的数据
             </a>
           </li>
         </div>
-        <div id="app-4">
-          <ol>
-            <li v-for="todo in todos">
-              {{ todo.text }}
+        <div class="panel panel-default">
+          <div class="panel-heading">区块链</div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="https://www.jianshu.com/p/81060fd07987">
+                数字签名-----计算机与真实世界的映射----算法（程序）
+              </a>
             </li>
-          </ol>
+            <li class="list-group-item">
+              <a href="https://www.jianshu.com/p/00919e08a28b">
+                比特币白皮书翻译
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">英语学习</div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="https://www.jianshu.com/p/d94b3ce39485">
+                查字典
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-md-3 ">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <input type="button" onclick="changeLink()" value="登录">
+              <div>
+                {{ message }}
+              </div>
+            </div>
+            <li class="list-group-item">
+              <a href="./public/articles/konwSysterm.md">
+                写作让你更快的成长
+              </a>
+            </li>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">热门标签</h3>
+            </div>
+            <li class="list-group-item">
+              <a href="https://www.jianshu.com/p/ac38a91e2ac2">
+                ＥＯＳ　英语单词
+              </a>
+            </li>
+          </div>
+          <div>
+            <!-- 渲染的列表 -->
+            <ol>
+              <li v-for="todo in todos">
+                {{ todo.text }}
+              </li>
+              <hr/>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
-<div id="calendar" style="height: 800px;"></div>
-
 </body>
 
 </html>
 <script>
-
+  //练习使用vue
   var app = new Vue({
     el: '#app',
     data: {
-      message: 'welcome to a new blog system!'
-    }
-  })
-  var app = new Vue({
-    el: '#calendar',
-    data: {
-      message: 'welcome to a new calendar!'
-    }
-  })
-  var app = new Vue({
-    el: '#app-4',
-    data: {
+      message: 'welcome to a new blog system!',
       todos: [
         { text: '学习 JavaScript' },
         { text: '学习 Vue' },
