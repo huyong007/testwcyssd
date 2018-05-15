@@ -8,7 +8,15 @@ cooking函数的执行流程，3，函数的执行都是按照顺序一行一行
 和其他的条件语句，这个后面再看,如果打印的数字超过数组的范围那么
 会给一个underfined，continue就是在出现了错误值仍然继续执行在for
 循环中，*/
+let a = require('debug')('cookflow:a');
+let b = require('debug')('cookflow:b');
+let c = require('debug')('cookflow:c');
+let d = require('debug')('cookflow:d');
+let e = require('debug')('cookflow:e');
+
+
 function buyFoods(callback) {
+    b('flag2');
     console.log("我要開始採購食物啦、、、、、");
     setTimeout(function () {
         console.log('採購完畢');
@@ -17,12 +25,14 @@ function buyFoods(callback) {
     }, 5000);
 }
 function prepare() {
+    c('flag3');
     console.log('努力磨刀...努力洗碗...努力打掃...勞動最光榮');
-    return ;
+    return true;
 }
 function cooking(foodsList, callback) {
     console.log('開始做菜啦。。。。');
     setTimeout(function () {
+        d('flag4');
         console.log('今天要做這些菜' + foodsList);
         console.log('大功告成，上菜');
         var feast = ['雞蛋西紅柿', '紅燒肉', '紅燒魚'];
@@ -38,8 +48,10 @@ function startWork() {
     }
     buyFoods(function (foodsList) {
         cooking(foodsList, function (feast) {
+            a('flag1');
             console.log('-----酒席準備好了-----');
             for (var i = 0; i < feast.length; i++) {
+                e('flag5');
                 console.log(feast[i]);
             }
         });
@@ -48,11 +60,3 @@ function startWork() {
 }
 
 startWork();
-console.log('------------------------------');
-
-var a=[12,3,3,4,-0,5]
-
-for(var i=0;i<a.length;i++){
-    if(!a[i]) continue;
-    console.log(a[i]);
-}
