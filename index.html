@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./public/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
 </head>
 
 <body>
+    <div class="logo">
+        <img src="./public/images/logo.png" alt="">
+    </div>
+    <div class="mackLay"></div>
+
+    
   <div id="app">
-    <div class="main-header" style="background-color:rgba(0, 225, 255, 0.329)">
-      <div class="container">
-        <h1>
-          胡永的博客网站
-        </h1>
+    <div class="main-header">
+      <div class=" col-md-offset-1">
+        胡永的博客网站
       </div>
 
     </div>
@@ -64,6 +69,7 @@
       <div class="container">
         <div class="col-md-3 ">
           <div class="panel panel-default">
+
             <div class="panel-heading">
               <input type="button" onclick="changeLink()" style="font-family:arial;color:red;font-size:10px;" value="登录">
               <div>
@@ -98,13 +104,15 @@
         </div>
       </div>
     </div>
-    <address>
-      Written by yong Hu.
-      <br> Visit me at:
-      <br> github.com/huyong007
-      <br> Nanjing
-      <br> China
-    </address>
+    <hr />
+    <div id="sidebar">
+      <p ><strong>整个</strong>分成两个部分做css和html的实验</p>
+      <p class="center"><strong>整个</strong>分成两个部分做css和html的实验</p>
+    </div>
+  <hr />
+
+   
+
 </body>
 
 </html>
