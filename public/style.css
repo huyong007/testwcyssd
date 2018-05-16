@@ -11,7 +11,7 @@ p {
   padding:20px;
   }
 body {
-  background-image: url(images/bg_one.jpg);
+  background-image: url(./public/images/bg_one.jpg);
  
   background-position:50px 100px;
 
