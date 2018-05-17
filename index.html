@@ -27,7 +27,7 @@
     <div class="container">
       <div class="col-md-6 col-md-offset-1">
         <div class="panel panel-default">
-          <div class="panel-heading" style="background-color:rgba(89, 0, 255, 0.712)">
+          <div class="panel-heading">
             <h3 class="panel-title">
               <abbr title="how to program">编程</abbr>
             </h3>
@@ -83,7 +83,7 @@
           </div>
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">热门标签</h3>
+              热门标签
             </div>
             <li class="list-group-item">
               <a href="https://www.jianshu.com/p/ac38a91e2ac2/">
@@ -94,9 +94,11 @@
           <div>
             <!-- 渲染的列表 -->
             <ol>
-              <li v-for="todo in todos">
+              <li v-for="todo in todos" class="col-md-offset-1">
                 {{ todo.text }}
               </li>
+
+              <br/>
               <hr/>
             </ol>
           </div>
@@ -107,21 +109,24 @@
 
 
     <br />
-    <div class="chinese-article">
-      <table border="1">
-        <tr>
-          <td>html</td>
-          <td>css</td>
-        </tr>
-        <tr>
-          <td>html布局-表格的HTML布局</td>
-          <td>css文本</td>
-        </tr>
-      </table>
-      <ol>
-        <li>整个分成两个部分做css和html的实验</li>
-        <li>整个分成两个部分做css和html的实验</li>
-      </ol>
+    <div>
+      <CENTER>
+        <table border="1">
+          <tr>
+            <td>html</td>
+            <td>css</td>
+          </tr>
+          <tr>
+            <td>html布局-表格的HTML布局</td>
+            <td>css文本</td>
+          </tr>
+        </table>
+        <ol>
+          <li>整个分成两个部分做css和html的实验</li>
+          <li>整个分成两个部分做css和html的实验</li>
+        </ol>
+      </CENTER>
+
     </div>
     <div>
       <p class="tip">
