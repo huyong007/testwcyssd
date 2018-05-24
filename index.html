@@ -3,6 +3,10 @@
 
 <head lang="en">
   <meta charset="UTF-8">
+  <title>Styling HTML5</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   <title>坚持就是胜利</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -70,14 +74,24 @@
           <div class="panel panel-default">
 
             <div class="panel-heading">
-              <input type="button" onclick="changeLink()" style="font-family:arial;color:red;font-size:10px;" value="登录">
+              <form>
+                用户名:
+                <br>
+                <input type="text" name="username">
+                <br> 您的密码:
+                <br>
+                <input type="password" name="psw">
+              </form>
+              <button type="button" style="font-family:arial;color:red;font-size:10px;" onclick="alert('sorry!还没完工!')">登陆</button>
+
+              <button type="button" style="font-family:arial;color:red;font-size:10px;" onclick="alert('sorry!还没完工!')">注册</button>
               <div>
                 {{ message }}
               </div>
             </div>
             <li class="list-group-item">
               <a href="./public/articles/wrong.html">
-                错误问题总结
+                您的使用体验反馈
               </a>
             </li>
           </div>
@@ -123,7 +137,7 @@
             <td>44节</td>
           </tr>
           <tr>
-            <td>22html表单元素</td>
+            <td>17节html5元素</td>
             <td>29节css轮廓</td>
           </tr>
         </table>
@@ -132,6 +146,12 @@
 
 
       <br />
+      <div>
+        <video width="320" height="240" controls="controls">
+          <source src="./public/images/movie.ogg" type="video/ogg"> Your browser does not support the video tag.
+        </video>
+      </div>
+
       <div>
         <p class="tip">
           <span>提示：学习中... ... ...</span>

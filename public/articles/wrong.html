@@ -3,7 +3,10 @@
 
 <head lang="en">
   <meta charset="utf-8" />
-
+  <title>Styling HTML5</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <title>错误记录</title>
   <style>
     body {
@@ -67,18 +70,29 @@
   </div>
 
   <div id="section">
-    <h2>HTML</h2>
-    <p>html的属性选择器</p>
-    <p>td.fancy</p>
     <div>
-      <ul>
-        <li>目标</li>
-        <li>问题</li>
-        <li>诊断</li>
-        <li>方案</li>
-        <li>践行</li>
-      </ul>
+      <p>选择你要进入的传送门</p>
+      <form action="********">
+        <select>
+          <option value="目标" selected>目标</option>
+          <option value="问题">问题</option>
+          <option value="诊断">诊断</option>
+          <option value="方案">方案</option>
+          <option value="践行">践行</option>
+        </select>
+        <button type="button" onclick="alert('还没完工!')">提交</button>
+      </form>
     </div>
+    <div>
+      <textarea name="message" rows="10" cols="30">
+        写下此时的心情
+      </textarea>
+      <input type="submit">
+      <br/> 注册时间：
+      <input type="date" name="bday">
+      <input type="submit">
+    </div>
+
   </div>
   <div id="footer" class="card-text">&nbsp;
     <span class="text-danger">❤</span>&nbsp;&nbsp;
