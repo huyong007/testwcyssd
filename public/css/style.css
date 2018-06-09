@@ -1,22 +1,10 @@
 
 
 
-p.tip span {
-	font-weight:bold;
-  color:#ff9955;
-  border:red solid thin;
-  outline-style:dotted;
-  outline-color:#00ff00;
-  margin : 40%;
-	}
+
 body {
   background-image: url(../images/sea-3225720_1920.jpg);
 }
-
-a:link {color:#FF0000;}    /* 未被访问的链接 */
-a:visited {color:#00FF00;} /* 已被访问的链接 */
-a:hover {font-size:150%;}   /* 鼠标指针移动到链接上 */
-a:active {color:#0000FF;}  /* 正在被点击的链接 */
 
 
 .main-header {
@@ -28,9 +16,7 @@ a:active {color:#0000FF;}  /* 正在被点击的链接 */
   color: rgba(95, 89, 153, 0.822);
 }
 
-video.video {
- margin :40%;
-}
+
 
 
 
