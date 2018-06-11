@@ -2,26 +2,65 @@
 <html>
 
 <head>
+    <style type="text/css">
+        ul {
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
 
+        a {
+            float: left;
+            width: 7em;
+            text-decoration: none;
+            color: white;
+            background-color: purple;
+            padding: 0.2em 0.6em;
+            border-right: 1px solid white;
+        }
+
+        a:hover {
+            background-color: #ff3300
+        }
+    </style>
 </head>
 
 <body>
-    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
-        <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-    </svg>
+    <box>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
+            <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+        </svg>
+    </box>
+
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3;">Your browser does not support the canvas element. </canvas>
 
 
     <audio controls="controls">
         <source src="../src/song.ogg" type="audio/ogg"> Your browser does not support the audio element.
     </audio>
-    <p>
-        <a href="/i/song.mp3">播放 mp3</a>
-    </p>
-    <p>
-        <a href="/i/bird.wav">播放 wav</a>
-    </p>
 
+    <ul>
+        <li>
+            <a href="/i/song.mp3">播放 mp3</a>
+        </li>
+        <li>
+            <a href="/i/bird.wav">播放 wav</a>
+        </li>
+        <li>
+            <a href="#">Link one</a>
+        </li>
+        <li>
+            <a href="#">Link two</a>
+        </li>
+        <li>
+            <a href="#">Link three</a>
+        </li>
+        <li>
+            <a href="#">Link four</a>
+        </li>
+    </ul>
 </body>
 <script>
 
