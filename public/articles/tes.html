@@ -10,6 +10,18 @@
         <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
     </svg>
     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3;">Your browser does not support the canvas element. </canvas>
+
+
+    <audio controls="controls">
+        <source src="../src/song.ogg" type="audio/ogg"> Your browser does not support the audio element.
+    </audio>
+    <p>
+        <a href="/i/song.mp3">播放 mp3</a>
+    </p>
+    <p>
+        <a href="/i/bird.wav">播放 wav</a>
+    </p>
+
 </body>
 <script>
 
@@ -20,5 +32,6 @@
     grd.addColorStop(1, "#00FF00");
     cxt.fillStyle = grd; cxt.fillRect(0, 0, 175, 50);
 </script>
+<script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
 
 </html>
