@@ -1,61 +1,57 @@
 <!DOCTYPE html>
 <html>
-<title>Bootstrap test</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 <head>
+    <title>Bootstrap test</title>
+    <meta charset="utf-8">
+   
+    <meta name="keywords" contents="html,xhtml,jsvascript,vascript"/>
+
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
-        ul {
-            float: left;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
+        * {
+
+            background-color: burlywood;
         }
 
-        a {
-            float: left;
-            width: 7em;
-            text-decoration: none;
-            color: white;
-            background-color: purple;
-            padding: 0.2em 0.6em;
-            border-right: 1px solid white;
+        *.best {
+            font-style: italic;
         }
 
-        a:hover {
-            background-color: #ff3300
+        *.good {
+            font-weight: bold;
+        }
+
+        *.good.best {
+            background: thistle;
+        }
+
+        #intro {
+            color: yellow;
+        }
+
+        a[href="/i/song.mp3"] {
+            color: red;
         }
     </style>
 </head>
 
 <body>
+    <p class="good">检查css样式的段落</p>
+    <a href="https://www.baidu.com/" target="_blank">a的属性</a>
+    <p class="best">检查css样式的段落</p>
+    <p class="good best" id="intro">检查css样式的段落</p>
     <div class="container">
-        <box>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="190">
-                <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
-            </svg>
-        </box>
-
-        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3;">Your browser does not support the canvas element. </canvas>
-
-
-        <audio controls="controls">
-            <source src="../src/song.ogg" type="audio/ogg"> Your browser does not support the audio element.
-        </audio>
-
         <ul>
-            <li>
+            <li class="good">
                 <a href="/i/song.mp3">播放 mp3</a>
             </li>
             <li>
                 <a href="/i/bird.wav">播放 wav</a>
             </li>
-            <li>
+            <li class="good">
                 <a href="#">Link one</a>
             </li>
             <li>
@@ -93,89 +89,16 @@
                 </div>
             </div>
         </div>
+        <a href="html_element.html" download="html元素总结">html元素总结</a>
     </div>
-    <div>
-        <div class="container">
-            <h1>Hello, world!</h1>
-            <div class="row">
-                <div class="col-md-3" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                    <h4>第一列</h4>
-                    <p>
-                       1
-                    </p>
-                </div>
-                <div class="col-md-9" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                    <h4>第二列 - 分为四个盒子</h4>
-                    <div class="row">
-                        <div class="col-md-6" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                            <p>
-                               2.1.1
-                            </p>
-                        </div>
-                        <div class="col-md-6" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                            <p>
-                                2.1.2
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                            <p>
-                               2.2.1
-                            </p>
-                        </div>
-                        <div class="col-md-6" style="background-color: #B18904; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                            <p>
-                                2.2.2
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><div class="container">
-    
-        <h1>Hello, world!</h1>
-    
-        <div class="row">
-            <p>排序前</p>
-            <div class="col-md-4" style="background-color: #dedef8;
-             box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                我在左边
-            </div>
-            <div class="col-md-8" style="background-color: #dedef8;
-             box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-                我在右边
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <p>排序后</p>
-            <div class="col-md-4 col-md-push-8" style="background-color: #dedef8;
-             box-shadow: inset 1px -1px 1px #444, 
-             inset -1px 1px 1px #444;">
-                我在左边
-            </div>
-            <div class="col-md-8 col-md-pull-4" style="background-color: #dedef8;
-             box-shadow: inset 1px -1px 1px #444, 
-             inset -1px 1px 1px #444;">
-                我在右边
-            </div>
-        </div>
-    
-    </div>
+
     <div>
 
     </div>
 </body>
 <script>
 
-    var c = document.getElementById("myCanvas");
-    var cxt = c.getContext("2d");
-    var grd = cxt.createLinearGradient(0, 0, 175, 50);
-    grd.addColorStop(0, "#FF0000");
-    grd.addColorStop(1, "#00FF00");
-    cxt.fillStyle = grd; cxt.fillRect(0, 0, 175, 50);
+
 </script>
 
 </html>
